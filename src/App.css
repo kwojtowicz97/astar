@@ -1,0 +1,45 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* APP */
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* GRID */
+
+.grid {
+    --gap: 3px;
+    --columns: 45;
+    --rows: 15;
+
+    position: relative;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: repeat(var(--rows), 1fr);
+    gap: var(--gap);
+}
+
+/* CELL */
+
+.cell {
+    width: auto;
+    aspect-ratio: 1/1;
+    background: gray;
+}
+
+/* CONTROLS */
+
+.controls {
+    height: 100%;
+}
