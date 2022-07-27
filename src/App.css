@@ -12,6 +12,7 @@ body, html {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 /* GRID */
@@ -19,10 +20,11 @@ body, html {
 .grid {
     --gap: 3px;
     --columns: 45;
-    --rows: 15;
+    --rows: 19;
 
     position: relative;
-    width: 100%;
+    width: 70%;
+    margin-bottom: 1%;
 
     display: grid;
     grid-template-columns: repeat(var(--columns), 1fr);
@@ -35,7 +37,8 @@ body, html {
 .cell {
     width: auto;
     aspect-ratio: 1/1;
-    background: gray;
+    background: rgb(224, 224, 224);
+    border-radius: 1px;
 }
 
 /* CONTROLS */

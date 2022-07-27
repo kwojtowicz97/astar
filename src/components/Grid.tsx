@@ -1,7 +1,7 @@
 import { Cell } from "./Cell";
 
 const columns = 45;
-const rows = 15;
+const rows = 19;
 
 export const Grid = () => {
   return (
